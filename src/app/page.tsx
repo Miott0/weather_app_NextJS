@@ -49,7 +49,7 @@ export default function Home(): JSX.Element {
   async function fetchData(cityName: string): Promise<void> {
     try {
       const response = await fetch(
-        `https://https://dev-miott-weatherapp.vercel.app/api/weather?address=${cityName}`
+        `https://dev-miott-weatherapp.vercel.app/api/weather?address=${cityName}`
       );
       const jsonData = (await response.json()).data;
       setWeatherData(jsonData);
