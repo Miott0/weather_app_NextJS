@@ -111,7 +111,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className={styles.place}>{weatherData?.name}</div>
-            <div className={styles.date}>{date.diaSemana.slice(0, 3)}, {date.data}</div>
+            <div className={styles.date}>{date.diaSemana}, {date.data}</div>
           </>
         ) : (
           <div className={styles.place}>Loading...</div>
